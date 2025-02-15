@@ -1,0 +1,46 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Outlook/SendEmailToUser.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "MailBody&Sequence_1",
+        "MailSubject&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PathReporte",
+        "in_Config",
+        "in_Destinatario"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "PathScreenshotRiesgoPais&Sequence_1",
+        "dtRiesgoPais&Sequence_1",
+        "dtPeoresAcciones&Sequence_1",
+        "dtMejoresAcciones&Sequence_1",
+        "PathScreenshotPeoresAcciones&Sequence_1",
+        "PathScreenshotMejoresAcciones&Sequence_1",
+        "PathNewReport&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DestinatarioMail"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
