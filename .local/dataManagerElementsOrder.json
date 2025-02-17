@@ -12,13 +12,16 @@
       "Path": "Outlook/SendEmailToUser.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "LastLaborDay&Sequence_1",
+        "MailSubject&Sequence_1",
         "MailBody&Sequence_1",
-        "MailSubject&Sequence_1"
+        "PathAttachment&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_PathReporte",
         "in_Config",
-        "in_Destinatario"
+        "in_Destinatario",
+        "in_PathReporte",
+        "in_SystemException"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -26,18 +29,85 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_Destinatario",
+        "in_PathReporte",
+        "in_SystemException",
+        "in_DestinatarioMail"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RAVA/CloseWebsite.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RAVA/GoToWebsite.xaml",
+      "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Config&Sequence_1",
-        "PathScreenshotRiesgoPais&Sequence_1",
-        "dtRiesgoPais&Sequence_1",
-        "dtPeoresAcciones&Sequence_1",
-        "dtMejoresAcciones&Sequence_1",
-        "PathScreenshotPeoresAcciones&Sequence_1",
-        "PathScreenshotMejoresAcciones&Sequence_1",
-        "PathNewReport&Sequence_1"
+        "boolWebsiteIsOpen&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_DestinatarioMail"
+        "in_Url"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RAVA/GetDataRiesgoPais.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ScreenshotTable&Sequence_1",
+        "dtRiesgoPais&Sequence_1",
+        "DefaultScreenshotName&Sequence_1",
+        "ElementTableRiesgoPais&Sequence_3",
+        "NewDataColumn&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PathTempFolder",
+        "out_PathScreenshot",
+        "out_dtRiesgoPais"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RAVA/GetDataAccionesGenerales.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ScreenshotWorstTable&Sequence_1",
+        "ScreenshotBestTable&Sequence_1",
+        "ElementTable&Sequence_2",
+        "ElementTableWithImage&Sequence_2",
+        "ElementDayColumn&Sequence_2",
+        "BoundingRectangle&Sequence_2",
+        "WholeScreen&Sequence_2",
+        "top&Sequence_2",
+        "TextDayColumn&Sequence_2",
+        "DefaultWorstRateScreenshotName&Sequence_4",
+        "DefaultBestRatesScreenshotName&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PathTempFolder",
+        "out_dtBestRatesAcciones",
+        "out_dtWorstRatesAcciones",
+        "out_PathWorstRates",
+        "out_PathBestRates"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
