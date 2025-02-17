@@ -113,7 +113,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetDataAccionesGenerales" sap:VirtualizedContainerService.HintSize="609.9999999999999,4114" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetDataAccionesGenerales" sap:VirtualizedContainerService.HintSize="1055,4860" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Image" Name="ScreenshotWorstTable" />
       <Variable x:TypeArguments="ui:Image" Name="ScreenshotBestTable" />
@@ -123,14 +123,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;GetDataAccionesGenerales starts&quot;]" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Inicio'" sap:VirtualizedContainerService.HintSize="518,2974" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d9aad2d997bca0aeebd293dd6fdaf8d0" Selector="&lt;html app='chrome.exe' title='Inicio*Rava Bursátil*' /&gt;">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="513,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;GetDataAccionesGenerales starts&quot;]" />
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Inicio'" sap:VirtualizedContainerService.HintSize="513,3059" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d9aad2d997bca0aeebd293dd6fdaf8d0" Selector="&lt;html app='chrome.exe' title='Inicio*Rava Bursátil*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,2794.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,2880" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:UiElement" Name="ElementTable" />
               <Variable x:TypeArguments="ui:UiElement" Name="ElementTableWithImage" />
@@ -146,7 +146,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'tabla-acciones-gen...'" FoundElement="[ElementTable]" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'tabla-acciones-gen...'" FoundElement="[ElementTable]" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
               <ui:WaitUiElementAppear.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ac5b74e-30ec-4ca2-9950-0e0f02c556ad" InformativeScreenshot="6523723c291ff489381261cca7c1696c" Selector="&lt;webctrl parentid='tabla-acciones-general' tag='TABLE' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -158,7 +158,7 @@
                 </ui:Target>
               </ui:WaitUiElementAppear.Target>
             </ui:WaitUiElementAppear>
-            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'tabla-acciones-general with image'" FoundElement="[ElementTableWithImage]" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'tabla-acciones-general with image'" FoundElement="[ElementTableWithImage]" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
               <ui:WaitUiElementAppear.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ac5b74e-30ec-4ca2-9950-0e0f02c556ad" InformativeScreenshot="6523723c291ff489381261cca7c1696c" Selector="&lt;webctrl id='tabla-acciones-general' tag='DIV' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -170,7 +170,7 @@
                 </ui:Target>
               </ui:WaitUiElementAppear.Target>
             </ui:WaitUiElementAppear>
-            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'day column'" FoundElement="[ElementDayColumn]" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
+            <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'day column'" FoundElement="[ElementDayColumn]" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
               <ui:WaitUiElementAppear.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ac5b74e-30ec-4ca2-9950-0e0f02c556ad" InformativeScreenshot="18e28633740641e0be03a158a46f2ff9" Selector="&lt;webctrl parentid='tabla-acciones-general' tag='TABLE' /&gt;&lt;webctrl tag='TH' class=' th-title' innertext='*% Dia*' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -182,7 +182,7 @@
                 </ui:Target>
               </ui:WaitUiElementAppear.Target>
             </ui:WaitUiElementAppear>
-            <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" sap2010:Annotation.AnnotationText="To make it visible and ready for screenshot" DisplayName="Inject Js Script - scroll to table element" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="function(){ document.querySelector('#tabla-acciones-general').scrollIntoView({ behavior: 'smooth', block: 'start' }); }">
+            <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" sap2010:Annotation.AnnotationText="To make it visible and ready for screenshot" DisplayName="Inject Js Script - scroll to table element" sap:VirtualizedContainerService.HintSize="418,198" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="function(){ document.querySelector('#tabla-acciones-general').scrollIntoView({ behavior: 'smooth', block: 'start' }); }">
               <ui:InjectJsScript.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="2d13709a-0d74-4a52-aa82-a55459d93622">
                   <ui:Target.TimeoutMS>
@@ -199,11 +199,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InjectJsScript>
-            <ui:Comment sap:VirtualizedContainerService.HintSize="450,88.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// First click to get best rates in table" />
-            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="[TimeSpan.FromSeconds(2)]">
+            <ui:Comment sap:VirtualizedContainerService.HintSize="418,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// First click to get best rates in table" />
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="418,386" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="[TimeSpan.FromSeconds(2)]">
               <ui:RetryScope.ActivityBody>
                 <ActivityAction>
-                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="First click to get the best rates&#xA;&#xA;Use a while activity to get the right value in the column" ClickType="CLICK_SINGLE" DisplayName="Click '% Dia' " sap:VirtualizedContainerService.HintSize="334,169.33333333333334" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="First click to get the best rates&#xA;&#xA;Use a while activity to get the right value in the column" ClickType="CLICK_SINGLE" DisplayName="Click '% Dia' " sap:VirtualizedContainerService.HintSize="334,179" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -235,7 +235,7 @@
                 <ActivityFunc x:TypeArguments="x:Boolean" />
               </ui:RetryScope.Condition>
             </ui:RetryScope>
-            <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Just to double check if it sorted correctly" DisplayName="Get Text of Column Day" sap:VirtualizedContainerService.HintSize="450,150" sap2010:WorkflowViewState.IdRef="GetValue_2">
+            <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Just to double check if it sorted correctly" DisplayName="Get Text of Column Day" sap:VirtualizedContainerService.HintSize="418,150" sap2010:WorkflowViewState.IdRef="GetValue_2">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[ElementDayColumn]" Id="2cb79e82-5db8-4c2a-9e39-e336d8e10ddd">
                   <ui:Target.TimeoutMS>
@@ -255,28 +255,28 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Day column text: &quot; + TextDayColumn]">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;Day column text: &quot; + TextDayColumn]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <If sap2010:Annotation.AnnotationText="Special characters&#xA;▼&#xA;▲" Condition="[TextDayColumn.Contains(&quot;▼&quot;)]" DisplayName="If column day is not sorted ascendent" sap:VirtualizedContainerService.HintSize="450,576.6666666666666" sap2010:WorkflowViewState.IdRef="If_4">
+            <If sap2010:Annotation.AnnotationText="Special characters&#xA;▼&#xA;▲" Condition="[TextDayColumn.Contains(&quot;▼&quot;)]" DisplayName="If column day is not sorted ascendent" sap:VirtualizedContainerService.HintSize="418,546" sap2010:WorkflowViewState.IdRef="If_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,262" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="First click to get the best rates&#xA;&#xA;Use a while activity to get the right value in the column" ClickType="CLICK_SINGLE" DisplayName="Click '% Dia' " sap:VirtualizedContainerService.HintSize="382,192" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="First click to get the best rates&#xA;&#xA;Use a while activity to get the right value in the column" ClickType="CLICK_SINGLE" DisplayName="Click '% Dia' " sap:VirtualizedContainerService.HintSize="382,202" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -305,7 +305,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -314,7 +314,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[out_dtBestRatesAcciones]" DisplayName="Extract Structured Data 'Acciones General'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Especie ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Último ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Dia ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Mes ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Año ▼' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="0" SimulateClick="True">
+            <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[out_dtBestRatesAcciones]" DisplayName="Extract Structured Data 'Acciones General'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Especie ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Último ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Dia ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Mes ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Año ▼' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="0" SimulateClick="True">
               <ui:ExtractData.Target>
                 <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[ElementTable]" Id="906829da-57e2-4c30-a9ab-2d70c6e0bde1" InformativeScreenshot="cce6534ad1ea605b22e2ff06bc15b8f4" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -323,7 +323,7 @@
                 </ui:Target>
               </ui:ExtractData.Target>
             </ui:ExtractData>
-            <ui:TakeScreenshot DisplayName="Take Screenshot 'Tabla Acciones General'" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[ScreenshotBestTable]" WaitBefore="2200">
+            <ui:TakeScreenshot DisplayName="Take Screenshot 'Tabla Acciones General'" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[ScreenshotBestTable]" WaitBefore="2200">
               <ui:TakeScreenshot.Target>
                 <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[ElementTableWithImage]" Id="46db3ed4-63c5-43a2-8c87-692f70df1b84" InformativeScreenshot="e8ece4d0261df63941faeecc8cac8cbe" WaitForReady="INTERACTIVE">
                   <ui:Target.TimeoutMS>
@@ -332,7 +332,7 @@
                 </ui:Target>
               </ui:TakeScreenshot.Target>
             </ui:TakeScreenshot>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="418,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,256" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
@@ -358,8 +358,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:Comment sap:VirtualizedContainerService.HintSize="450,88.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// 2nd Click to get worst rates in table" />
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="2nd click to get the worst rates" ClickType="CLICK_SINGLE" DisplayName="Click '% Dia' " sap:VirtualizedContainerService.HintSize="382,170" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+            <ui:Comment sap:VirtualizedContainerService.HintSize="418,88" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// 2nd Click to get worst rates in table" />
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="2nd click to get the worst rates" ClickType="CLICK_SINGLE" DisplayName="Click '% Dia' " sap:VirtualizedContainerService.HintSize="418,170" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -383,7 +383,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[out_dtWorstRatesAcciones]" DisplayName="Extract Structured Data 'Acciones General'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Especie ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Último ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Dia ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Mes ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Año ▼' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="382,139.33333333333334" sap2010:WorkflowViewState.IdRef="ExtractData_3" MaxNumberOfResults="0" SimulateClick="True">
+            <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[out_dtWorstRatesAcciones]" DisplayName="Extract Structured Data 'Acciones General'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Especie ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right Último ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Dia ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Mes ▼' attr='text' /&gt;&lt;column name='file_download&amp;#xA;&amp;#xA;@RavaBursatil&amp;#xA;&amp;#xA;ACCIONES GENERAL&amp;#xA;&amp;#xA;chevron_right % Año ▼' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="ExtractData_3" MaxNumberOfResults="0" SimulateClick="True">
               <ui:ExtractData.Target>
                 <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[ElementTable]" Id="906829da-57e2-4c30-a9ab-2d70c6e0bde1" InformativeScreenshot="cce6534ad1ea605b22e2ff06bc15b8f4" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -392,7 +392,7 @@
                 </ui:Target>
               </ui:ExtractData.Target>
             </ui:ExtractData>
-            <ui:TakeScreenshot DisplayName="Take Screenshot 'Tabla Acciones General'" sap:VirtualizedContainerService.HintSize="382,130" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" Screenshot="[ScreenshotWorstTable]" WaitBefore="2200">
+            <ui:TakeScreenshot DisplayName="Take Screenshot 'Tabla Acciones General'" sap:VirtualizedContainerService.HintSize="418,130" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2" Screenshot="[ScreenshotWorstTable]" WaitBefore="2200">
               <ui:TakeScreenshot.Target>
                 <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[ElementTableWithImage]" Id="46db3ed4-63c5-43a2-8c87-692f70df1b84" InformativeScreenshot="e8ece4d0261df63941faeecc8cac8cbe" WaitForReady="INTERACTIVE">
                   <ui:Target.TimeoutMS>
@@ -405,26 +405,26 @@
         </ActivityAction>
       </ui:BrowserScope.Body>
     </ui:BrowserScope>
-    <Sequence DisplayName="Parse datatables" sap:VirtualizedContainerService.HintSize="512.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Parse datatables" sap:VirtualizedContainerService.HintSize="513,735" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each column in out_dtWorstRatesAcciones" sap:VirtualizedContainerService.HintSize="434,318" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[out_dtWorstRatesAcciones.Columns]">
+      <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each column in out_dtWorstRatesAcciones" sap:VirtualizedContainerService.HintSize="470,326" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[out_dtWorstRatesAcciones.Columns]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="sd:DataColumn">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="column" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,194" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,196" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap2010:Annotation.AnnotationText="Just get the name after the phrase &quot;chevron_right&quot;" DisplayName="Assign Fix ColumnName" sap:VirtualizedContainerService.HintSize="262,102" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap2010:Annotation.AnnotationText="Just get the name after the phrase &quot;chevron_right&quot;" DisplayName="Assign Fix ColumnName" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[column.ColumnName]</OutArgument>
                 </Assign.To>
@@ -441,19 +441,19 @@
           </ActivityAction>
         </ui:ForEach.Body>
       </ui:ForEach>
-      <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each column in out_dtBestRatesAcciones" sap:VirtualizedContainerService.HintSize="434,318" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[out_dtBestRatesAcciones.Columns]">
+      <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each column in out_dtBestRatesAcciones" sap:VirtualizedContainerService.HintSize="470,317" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[out_dtBestRatesAcciones.Columns]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="sd:DataColumn">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="column" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,194" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,196" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap2010:Annotation.AnnotationText="Just get the name after the phrase &quot;chevron_right&quot;" DisplayName="Assign Fix ColumnName" sap:VirtualizedContainerService.HintSize="262,102" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap2010:Annotation.AnnotationText="Just get the name after the phrase &quot;chevron_right&quot;" DisplayName="Assign Fix ColumnName" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[column.ColumnName]</OutArgument>
                 </Assign.To>
@@ -471,7 +471,7 @@
         </ui:ForEach.Body>
       </ui:ForEach>
     </Sequence>
-    <Sequence DisplayName="Save images as files" sap:VirtualizedContainerService.HintSize="512.6666666666666,716" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Save images as files" sap:VirtualizedContainerService.HintSize="513,706" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Default="Worst Rates - Acciones Generales.png" Name="DefaultWorstRateScreenshotName" />
         <Variable x:TypeArguments="x:String" Default="Best Rates - Acciones Generales.png" Name="DefaultBestRatesScreenshotName" />
@@ -481,7 +481,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:MultipleAssign DisplayName="Multiple Assign - Path outputs" sap:VirtualizedContainerService.HintSize="478.6666666666667,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign DisplayName="Multiple Assign - Path outputs" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
         <ui:MultipleAssign.AssignOperations>
           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -503,7 +503,7 @@
           </scg:List>
         </ui:MultipleAssign.AssignOperations>
       </ui:MultipleAssign>
-      <If Condition="[File.Exists(out_PathBestRates)]" DisplayName="If image best rates already exists" sap:VirtualizedContainerService.HintSize="478.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[File.Exists(out_PathBestRates)]" DisplayName="If image best rates already exists" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="If_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -511,10 +511,10 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <ui:DeleteFileX DisplayName="Delete Old Screenshot" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[out_PathBestRates]" />
+          <ui:DeleteFileX DisplayName="Delete Old Screenshot" sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[out_PathBestRates]" />
         </If.Then>
         <If.Else>
-          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -523,7 +523,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <If Condition="[File.Exists(out_PathWorstRates)]" DisplayName="If image worst rates already exists" sap:VirtualizedContainerService.HintSize="478.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_2">
+      <If Condition="[File.Exists(out_PathWorstRates)]" DisplayName="If image worst rates already exists" sap:VirtualizedContainerService.HintSize="479,57" sap2010:WorkflowViewState.IdRef="If_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -531,10 +531,10 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <ui:DeleteFileX DisplayName="Delete Old Screenshot" sap:VirtualizedContainerService.HintSize="434,79" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[out_PathWorstRates]" />
+          <ui:DeleteFileX DisplayName="Delete Old Screenshot" sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_2" Path="[out_PathWorstRates]" />
         </If.Then>
         <If.Else>
-          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -543,9 +543,9 @@
           </Sequence>
         </If.Else>
       </If>
-      <ui:SaveImage DisplayName="Save Image of Screenshot Best Rates" FileName="[out_PathBestRates]" sap:VirtualizedContainerService.HintSize="478.6666666666667,169.33333333333334" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[ScreenshotBestTable]" />
-      <ui:SaveImage DisplayName="Save Image of Screenshot Worst Rates" FileName="[out_PathWorstRates]" sap:VirtualizedContainerService.HintSize="478.6666666666667,160" sap2010:WorkflowViewState.IdRef="SaveImage_2" Image="[ScreenshotWorstTable]" />
+      <ui:SaveImage DisplayName="Save Image of Screenshot Best Rates" FileName="[out_PathBestRates]" sap:VirtualizedContainerService.HintSize="479,165" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[ScreenshotBestTable]" />
+      <ui:SaveImage DisplayName="Save Image of Screenshot Worst Rates" FileName="[out_PathWorstRates]" sap:VirtualizedContainerService.HintSize="479,156" sap2010:WorkflowViewState.IdRef="SaveImage_2" Image="[ScreenshotWorstTable]" />
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="512.6666666666666,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;GetDataAccionesGenerales ends&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="513,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;GetDataAccionesGenerales ends&quot;]" />
   </Sequence>
 </Activity>

@@ -12,16 +12,16 @@
       "Path": "Outlook/SendEmailToUser.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "PathAttachment&Sequence_1",
         "LastLaborDay&Sequence_1",
-        "MailSubject&Sequence_1",
         "MailBody&Sequence_1",
-        "PathAttachment&Sequence_1"
+        "MailSubject&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_Config",
-        "in_Destinatario",
+        "in_SystemException",
         "in_PathReporte",
-        "in_SystemException"
+        "in_Config",
+        "in_Destinatario"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -29,30 +29,30 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "PathScreenshotRiesgoPais&Sequence_1",
+        "dtRiesgoPais&Sequence_1",
+        "dtPeoresAcciones&Sequence_1",
+        "dtMejoresAcciones&Sequence_1",
+        "PathScreenshotPeoresAcciones&Sequence_1",
+        "PathScreenshotMejoresAcciones&Sequence_1",
+        "PathNewReport&Sequence_1",
+        "SystemException&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [
-        "in_Config",
-        "in_Destinatario",
-        "in_PathReporte",
-        "in_SystemException",
         "in_DestinatarioMail"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "RAVA/CloseWebsite.xaml",
+      "Path": "Excel/InsertImageInCell.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Framework/CloseAllApplications.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_PathImage"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },

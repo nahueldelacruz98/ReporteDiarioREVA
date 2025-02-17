@@ -101,7 +101,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592.6666666666666,2248.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1055,2239" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:String" Name="PathScreenshotRiesgoPais" />
@@ -111,51 +111,53 @@
       <Variable x:TypeArguments="x:String" Name="PathScreenshotPeoresAcciones" />
       <Variable x:TypeArguments="x:String" Name="PathScreenshotMejoresAcciones" />
       <Variable x:TypeArguments="x:String" Name="PathNewReport" />
-      <Variable x:TypeArguments="s:Exception" Name="SystemException">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="s:Exception" ExpressionText="Nothing" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="s:Exception" Default="[Nothing]" Name="SystemException" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings - Invoke Workflow File (Framework\InitAllSettings.xaml)" sap:VirtualizedContainerService.HintSize="470,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings - Invoke Workflow File (Framework\InitAllSettings.xaml)" sap:VirtualizedContainerService.HintSize="470,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Data\Config.xlsx</InArgument>
         <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings", "Constants"}]</InArgument>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="KillAllProcesses - Invoke Workflow File (Framework\KillAllProcesses.xaml)" sap:VirtualizedContainerService.HintSize="470,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\KillAllProcesses.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="KillAllProcesses - Invoke Workflow File (Framework\KillAllProcesses.xaml)" sap:VirtualizedContainerService.HintSize="470,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\KillAllProcesses.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <TryCatch DisplayName="Try Catch - Get data from RAVA website" sap:VirtualizedContainerService.HintSize="470,1614.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch - Get data from RAVA website" sap:VirtualizedContainerService.HintSize="470,1606" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Get data from RAVA website" sap:VirtualizedContainerService.HintSize="468,868" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Get data from RAVA website" sap:VirtualizedContainerService.HintSize="468,866" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GoToWebsite - Invoke Workflow File (RAVA\GoToWebsite.xaml)" sap:VirtualizedContainerService.HintSize="434,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="RAVA\GoToWebsite.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GoToWebsite - Invoke Workflow File (RAVA\GoToWebsite.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="RAVA\GoToWebsite.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_Url">[Config("Rava_URL").ToString]</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetDataRiesgoPais - Invoke Workflow File (RAVA\GetDataRiesgoPais.xaml)" sap:VirtualizedContainerService.HintSize="434,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="RAVA\GetDataRiesgoPais.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetDataRiesgoPais - Invoke Workflow File (RAVA\GetDataRiesgoPais.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="RAVA\GetDataRiesgoPais.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_PathTempFolder">[Path.GetFullPath(Config("Path_TempFolder").ToString)]</InArgument>
               <OutArgument x:TypeArguments="x:String" x:Key="out_PathScreenshot">[PathScreenshotRiesgoPais]</OutArgument>
               <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtRiesgoPais">[dtRiesgoPais]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetDataAccionesGenerales - Invoke Workflow File (RAVA\GetDataAccionesGenerales.xaml)" sap:VirtualizedContainerService.HintSize="434,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="RAVA\GetDataAccionesGenerales.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetDataAccionesGenerales - Invoke Workflow File (RAVA\GetDataAccionesGenerales.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="RAVA\GetDataAccionesGenerales.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_PathTempFolder">[Path.GetFullPath(Config("Path_TempFolder").ToString)]</InArgument>
               <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtBestRatesAcciones">[dtMejoresAcciones]</OutArgument>
@@ -164,7 +166,7 @@
               <OutArgument x:TypeArguments="x:String" x:Key="out_PathBestRates">[PathScreenshotMejoresAcciones]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <ui:Comment sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// Once it gets the data and screenshots, create new report." />
+          <ui:Comment sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Comment_2" Text="// Once it gets the data and screenshots, create new report." />
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CompleteRavaReport - Invoke Workflow File (Excel\CompleteRavaReport.xaml)" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Excel\CompleteRavaReport.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtRiesgoPais">[dtRiesgoPais]</InArgument>
@@ -185,14 +187,14 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,344.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,338" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;There was an exception in the RAVA data extraction. Details: &quot; + exception.Message + &quot; at source: &quot; + exception.Source]" />
-              <Assign DisplayName="Assign - SystemException" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;There was an exception in the RAVA data extraction. Details: &quot; + exception.Message + &quot; at source: &quot; + exception.Source]" />
+              <Assign DisplayName="Assign - SystemException" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="s:Exception">[SystemException]</OutArgument>
                 </Assign.To>
@@ -219,8 +221,8 @@
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="470,88.66666666666667" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Send email to user and attach report." />
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailToUser - Invoke Workflow File (Outlook\SendEmailToUser.xaml)" sap:VirtualizedContainerService.HintSize="470,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Outlook\SendEmailToUser.xaml">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="470,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Send email to user and attach report." />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailToUser - Invoke Workflow File (Outlook\SendEmailToUser.xaml)" sap:VirtualizedContainerService.HintSize="470,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Outlook\SendEmailToUser.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_Destinatario">[in_DestinatarioMail]</InArgument>

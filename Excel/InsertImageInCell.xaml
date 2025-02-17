@@ -89,15 +89,15 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InsertImageInCell" sap:VirtualizedContainerService.HintSize="609.9999999999999,884" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InsertImageInCell" sap:VirtualizedContainerService.HintSize="1055,903" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;InsertImageInCell starts&quot;]" />
-    <ui:Comment sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Condition: Cell must be visible and selected in the excel file." />
-    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="Shortcut to open &quot;Insertar Imagen&quot; window" DisplayName="Type Into 'Excel fiile'" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[&quot;[k(alt)]b&quot; + &quot;im&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;InsertImageInCell starts&quot;]" />
+    <ui:Comment sap:VirtualizedContainerService.HintSize="416,107" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Condition: Cell must be visible and selected in the excel file." />
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="Shortcut to open &quot;Insertar Imagen&quot; window" DisplayName="Type Into 'Excel fiile'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[&quot;[k(alt)]b&quot; + &quot;im&quot;]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c601b3c-dea5-47a2-9203-c8ae5cc8795f" InformativeScreenshot="ec33a85e2bc014a354a37ca9c021c28d" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' /&gt;">
           <ui:Target.TimeoutMS>
@@ -114,7 +114,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:TypeInto>
-    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" DisplayName="Type Into 'Filename'" EmptyField="True" sap:VirtualizedContainerService.HintSize="416,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" Text="[in_PathImage+ &quot;[k(enter)]&quot;]">
+    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" AlterIfDisabled="True" sap2010:Annotation.AnnotationText="Look for image to insert in excel cell" DisplayName="Type Into 'Filename'" EmptyField="True" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" Text="[in_PathImage+ &quot;[k(enter)]&quot;]">
       <ui:TypeInto.Target>
         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c6755911-e330-4492-a9e0-49e2636f57d4" InformativeScreenshot="b8f2d48c638e7d5d5abc7a9311abc520" Selector="&lt;wnd app='excel.exe' cls='#32770' title='Insertar*' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd aaname='Nombre de archivo*' /&gt;">
           <ui:Target.TimeoutMS>
@@ -125,7 +125,12 @@
           </ui:Target.WaitForReady>
         </ui:Target>
       </ui:TypeInto.Target>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:TypeInto>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;InsertImageInCell ends&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;InsertImageInCell ends&quot;]" />
   </Sequence>
 </Activity>

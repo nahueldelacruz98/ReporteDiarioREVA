@@ -116,7 +116,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmailToUser" sap:VirtualizedContainerService.HintSize="592.6666666666666,1922" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmailToUser" sap:VirtualizedContainerService.HintSize="1055,1937" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="MailSubject" />
       <Variable x:TypeArguments="x:String" Name="MailBody" />
@@ -128,14 +128,16 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;SendEmailToUser starts&quot;]" />
-    <Sequence DisplayName="Get Last labor day" sap:VirtualizedContainerService.HintSize="504,500" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="504,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;SendEmailToUser starts&quot;]" />
+    <Sequence sap2010:Annotation.AnnotationText="Get last labor day to attach in email body" DisplayName="Get Last labor day" sap:VirtualizedContainerService.HintSize="504,523" sap2010:WorkflowViewState.IdRef="Sequence_9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign DisplayName="Assign - Last labor day" sap:VirtualizedContainerService.HintSize="470,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign DisplayName="Assign - Last labor day" sap:VirtualizedContainerService.HintSize="470,114" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="s:DateTime">[LastLaborDay]</OutArgument>
         </Assign.To>
@@ -143,15 +145,15 @@
           <InArgument x:TypeArguments="s:DateTime">[Now.AddDays(-1)]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While - Last labor day" sap:VirtualizedContainerService.HintSize="470,290.6666666666667" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[LastLaborDay.DayOfWeek.Equals(DayOfWeek.Sunday) Or LastLaborDay.DayOfWeek.Equals(DayOfWeek.Saturday)]" DisplayName="While - Last labor day" sap:VirtualizedContainerService.HintSize="470,286" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
         <ui:InterruptibleWhile.Body>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign - Last labor day" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Assign - Last labor day" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:DateTime">[LastLaborDay]</OutArgument>
               </Assign.To>
@@ -161,12 +163,9 @@
             </Assign>
           </Sequence>
         </ui:InterruptibleWhile.Body>
-        <ui:InterruptibleWhile.Condition>
-          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="LastLaborDay.DayOfWeek.Equals(DayOfWeek.Sunday) Or LastLaborDay.DayOfWeek.Equals(DayOfWeek.Saturday)" />
-        </ui:InterruptibleWhile.Condition>
       </ui:InterruptibleWhile>
     </Sequence>
-    <ui:MultipleAssign DisplayName="Multiple Assign - Mail attributes for system exception" sap:VirtualizedContainerService.HintSize="504,241.33333333333334" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+    <ui:MultipleAssign DisplayName="Multiple Assign - Mail attributes" sap:VirtualizedContainerService.HintSize="504,241" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -208,9 +207,9 @@ Replace("&lt;DATE&gt;",LastLaborDay.ToString("dd-MM-yyyy"))]</InArgument>
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <TryCatch DisplayName="Try Catch - Send email to user" sap:VirtualizedContainerService.HintSize="504,814" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch - Send email to user" sap:VirtualizedContainerService.HintSize="504,810" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Use default outlook account to send emails" Body="[MailBody]" DisplayName="Send Outlook Mail Message to user" sap:VirtualizedContainerService.HintSize="416,181.33333333333334" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[MailSubject]" To="[in_Destinatario]">
+        <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" sap2010:Annotation.AnnotationText="Use default outlook account to send emails" Body="[MailBody]" DisplayName="Send Outlook Mail Message to user" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" Subject="[MailSubject]" To="[in_Destinatario]">
           <ui:SendOutlookMail.Files>
             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
               <InArgument x:TypeArguments="x:String">[PathAttachment]</InArgument>
